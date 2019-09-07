@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/9 | Hofirstb的Blog</title>
+  <title>CSS 如何清除浮动 | Hofirstb的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hofirstb的Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
+  <meta name="description" content="什么是浮动浮动即在CSS中添加的属性float，其属性值可以是left(靠左浮动), right(靠右浮动), none(不浮动), inherit(继承父级浮动)。">
+<meta name="keywords" content="CSS,清除浮动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 如何清除浮动">
+<meta property="og:url" content="http://yoursite.com/2019/09/06/CSS如何清除浮动/index.html">
 <meta property="og:site_name" content="Hofirstb的Blog">
+<meta property="og:description" content="什么是浮动浮动即在CSS中添加的属性float，其属性值可以是left(靠左浮动), right(靠右浮动), none(不浮动), inherit(继承父级浮动)。">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567834975525&di=e7e5c28af81183d6c3a97fdb2fcc219b&imgtype=0&src=http%3A%2F%2Ftu.ossfiles.cn%3A9186%2Fgroup1%2FM00%2F03%2F3F%2FrBgIBlw9NqDWYa2gAAEBVR6Hz3s264.jpg">
+<meta property="og:updated_time" content="2019-09-07T07:27:23.570Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hofirstb的Blog">
+<meta name="twitter:title" content="CSS 如何清除浮动">
+<meta name="twitter:description" content="什么是浮动浮动即在CSS中添加的属性float，其属性值可以是left(靠左浮动), right(靠右浮动), none(不浮动), inherit(继承父级浮动)。">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567834975525&di=e7e5c28af81183d6c3a97fdb2fcc219b&imgtype=0&src=http%3A%2F%2Ftu.ossfiles.cn%3A9186%2Fgroup1%2FM00%2F03%2F3F%2FrBgIBlw9NqDWYa2gAAEBVR6Hz3s264.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hofirstb的Blog" type="application/atom+xml">
   
@@ -161,35 +168,89 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-CSS如何清除浮动" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/06/CSS如何清除浮动/" class="archive-article-date">
-  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/06/CSS如何清除浮动/">CSS 如何清除浮动</a>
+    <h1 class="article-title" itemprop="name">
+      CSS 如何清除浮动
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        <!--显示阅读次数-->
+        
+          <br/>
+          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+          <span class="icon-sort"></span>
+          <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+          </span>
+          </a>
+        
+        <!--显示阅读次数完毕-->
+        
+        <a href="/2019/09/06/CSS如何清除浮动/" class="archive-article-date">
+  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="什么是浮动"><a href="#什么是浮动" class="headerlink" title="什么是浮动"></a>什么是浮动</h2><p>浮动即在CSS中添加的属性float，其属性值可以是left(靠左浮动), right(靠右浮动), none(不浮动), inherit(继承父级浮动)。</p>
+<a id="more"></a>
+<p>浮动就像是如图中气球和熊一样，熊被气球的浮力带动，脱离地面浮在空中，即html中添加了float属性的标签都会脱离原本的文档流，在父级元素中漂浮起来。</p>
+<p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567834975525&di=e7e5c28af81183d6c3a97fdb2fcc219b&imgtype=0&src=http%3A%2F%2Ftu.ossfiles.cn%3A9186%2Fgroup1%2FM00%2F03%2F3F%2FrBgIBlw9NqDWYa2gAAEBVR6Hz3s264.jpg" alt></p>
+<h2 id="为什么要清除浮动"><a href="#为什么要清除浮动" class="headerlink" title="为什么要清除浮动"></a>为什么要清除浮动</h2><p>正如上面说到，浮动会导致元素脱离原来的文档流，漂浮在父级元素中，因此浮动元素后面的元素就会占据浮动元素的位置。举个例子，就好比上面图片的熊和空气的关系。我们假设熊周围的空气有颜色，并且颜色是一层一层的不同的颜色。熊浮动起来之前，和熊位于同一平面的空气是无法占据到熊的位置的。但是熊浮动起来之后，此时，我们从上往下看就无法看见或看到少量熊旁边的那一层颜色了，原因是熊旁边的那一层的空气把熊原来的位置给占据了。因此元素浮动之后，会影响到后续元素的排版和展示，所以我们在使用完浮动之后，根据情况是要清除浮动的。</p>
+<h2 id="那我们要如何清除浮动呢？"><a href="#那我们要如何清除浮动呢？" class="headerlink" title="那我们要如何清除浮动呢？"></a>那我们要如何清除浮动呢？</h2><ol>
+<li><p>在父级元素上的样式中添加代码</p>
+<p> <code>clear: left/right/both;</code> </p>
+<p> 其中三个属性代表的是清除左浮动/右浮动/全部浮动，但是这个方法有缺陷，它虽然可以达到清除父级元素内的浮动的目的，但是却没办法让父级元素根据子元素的浮动而撑开其高度，所以这个方法不常用。</p>
+</li>
+<li><p>利用伪类元素清除浮动</p>
+<p> 第一种写法</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:after&#123;</span><br><span class="line">    content:&quot;&quot;; // 内容为空就可以了</span><br><span class="line">    display:block; // 把伪元素转为块级元素</span><br><span class="line">    clear:both;</span><br><span class="line">    visibility:hidden; // 设为不可见</span><br><span class="line">&#125;</span><br><span class="line">.clearfix&#123;</span><br><span class="line">    *zoom:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 第二种写法</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:before,.clearfix:after&#123;</span><br><span class="line">    content:&quot;&quot;;</span><br><span class="line">    display:block;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">    clear:both;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix&#123;</span><br><span class="line">    *zoom:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h4><p> 一般将这段代码写在CSS样式表的顶部，添加在浮动元素的父级元素上。<br> 【注】 如果浮动元素和不浮动元素在同一父级元素下，请将连续浮动的元素包裹起来为它们建立一个独立的父级元素与不浮动元素同级，否则清除浮动不生效。</p>
+</li>
+</ol>
+<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><p>使用overflow清除浮动，即在父级元素的CSS样式中添加代码</p>
+<p><code>overflow: auto;</code></p>
+<p>同样可以清除浮动。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>看到这里是不是该犒劳犒劳自己<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -205,107 +266,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hofirstb19.io/2019/09/06/CSS如何清除浮动/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/06/JavaScript排序算法/" class="archive-article-date">
-  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/06/JavaScript排序算法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript 排序</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/06/JavaScript排序算法/">JavaScript 排序</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是浮动"><span class="toc-number">1.</span> <span class="toc-text">什么是浮动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要清除浮动"><span class="toc-number">2.</span> <span class="toc-text">为什么要清除浮动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#那我们要如何清除浮动呢？"><span class="toc-number">3.</span> <span class="toc-text">那我们要如何清除浮动呢？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#用法："><span class="toc-number">3.0.1.</span> <span class="toc-text">用法：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#拓展"><span class="toc-number">4.</span> <span class="toc-text">拓展</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/06/CSS定位问题/" class="archive-article-date">
-  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/06/CSS定位问题/">CSS 定位</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">position</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -331,8 +404,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

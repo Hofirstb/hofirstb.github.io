@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/9 | Hofirstb的Blog</title>
+  <title>CSS 定位 | Hofirstb的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hofirstb的Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
+  <meta name="description" content="CSS中有关绝对定位和相对定位的问题我个人认为绝对定位和相对定位的作用是很容易搞混的，所以这里仅记载了我个人对absolute和relative的用处做了一点小小的区分。">
+<meta name="keywords" content="CSS,position">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 定位">
+<meta property="og:url" content="http://yoursite.com/2019/09/06/CSS定位问题/index.html">
 <meta property="og:site_name" content="Hofirstb的Blog">
+<meta property="og:description" content="CSS中有关绝对定位和相对定位的问题我个人认为绝对定位和相对定位的作用是很容易搞混的，所以这里仅记载了我个人对absolute和relative的用处做了一点小小的区分。">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-07T08:04:28.476Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hofirstb的Blog">
+<meta name="twitter:title" content="CSS 定位">
+<meta name="twitter:description" content="CSS中有关绝对定位和相对定位的问题我个人认为绝对定位和相对定位的作用是很容易搞混的，所以这里仅记载了我个人对absolute和relative的用处做了一点小小的区分。">
   
     <link rel="alternative" href="/atom.xml" title="Hofirstb的Blog" type="application/atom+xml">
   
@@ -161,123 +166,77 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-CSS定位问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS 定位
+    </h1>
+  
+
+        <!--显示阅读次数-->
+        
+          <br/>
+          <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+          <span class="icon-sort"></span>
+          <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+          </span>
+          </a>
+        
+        <!--显示阅读次数完毕-->
+        
+        <a href="/2019/09/06/CSS定位问题/" class="archive-article-date">
+  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="CSS中有关绝对定位和相对定位的问题"><a href="#CSS中有关绝对定位和相对定位的问题" class="headerlink" title="CSS中有关绝对定位和相对定位的问题"></a>CSS中有关绝对定位和相对定位的问题</h2><p>我个人认为绝对定位和相对定位的作用是很容易搞混的，所以这里仅记载了我个人对absolute和relative的用处做了一点小小的区分。</p>
+<a id="more"></a>
+
+<h2 id="为什么要使用定位？"><a href="#为什么要使用定位？" class="headerlink" title="为什么要使用定位？"></a>为什么要使用定位？</h2><p>首先，关于定位，我们为什么要使用定位？<br>使用定位可以让我们使用top, left, bottom, right属性，来快速的为一个元素找到其相应的位置，如果没有使用定位，则这些属性就算给了属性值，也没有办法让元素根据它所给定的属性值进行排版。所以如果想在某一特定元素中给一个元素定位，那就要给这一特定元素添加定位。</p>
+<h2 id="绝对定位和相对定位"><a href="#绝对定位和相对定位" class="headerlink" title="绝对定位和相对定位"></a>绝对定位和相对定位</h2><ol>
+<li><p>绝对定位: absolute<br>当元素使用绝对定位即 <code>position:absolute;</code> 属性的时候，如果元素的父级没有定位，即该元素会继续向上寻找拥有定位的祖先级元素相对于它进行定位操作。如果某一元素使用了绝对定位，但从它的父级包括其父级往上找都找不到有定位的祖先及元素，那么它会相对与(能够显示的页面宽度高度)页面进行定位，定位后不会随页面滚动而固定。</p>
+</li>
+<li><p>相对定位: relative<br>当元素使用相对定位的时候，不管父级有没有定位，其只能相对于其父级进行定位，但是请注意<code>position:relative</code>无法使用right和bottom属性。</p>
+</li>
+</ol>
+<h4 id="拓展：固定定位-fixed"><a href="#拓展：固定定位-fixed" class="headerlink" title="拓展：固定定位(fixed)"></a>拓展：固定定位(fixed)</h4><p>当元素使用固定定位的时候，其可以使用top, left, bottom, right属性。一旦元素使用了固定定位，则其就相对于页面固定了，通常用于回到顶部，顶部导航栏等待。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>看到这里是不是该犒劳犒劳自己<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/06/CSS如何清除浮动/" class="archive-article-date">
-  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/06/CSS如何清除浮动/">CSS 如何清除浮动</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">清除浮动</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/06/JavaScript排序算法/" class="archive-article-date">
-  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/06/JavaScript排序算法/">JavaScript 排序</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/06/CSS定位问题/" class="archive-article-date">
-  	<time datetime="2019-09-06T13:46:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/06/CSS定位问题/">CSS 定位</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -293,19 +252,123 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hofirstb19.io/2019/09/06/CSS定位问题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/09/06/JavaScript排序算法/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JavaScript 排序
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS中有关绝对定位和相对定位的问题"><span class="toc-number">1.</span> <span class="toc-text">CSS中有关绝对定位和相对定位的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要使用定位？"><span class="toc-number">2.</span> <span class="toc-text">为什么要使用定位？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绝对定位和相对定位"><span class="toc-number">3.</span> <span class="toc-text">绝对定位和相对定位</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#拓展：固定定位-fixed"><span class="toc-number">3.0.1.</span> <span class="toc-text">拓展：固定定位(fixed)</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -331,8 +394,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
